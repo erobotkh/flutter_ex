@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'constant/const.dart';
+import 'constants/constant.dart';
 
 class Home extends StatefulWidget {
   @override
