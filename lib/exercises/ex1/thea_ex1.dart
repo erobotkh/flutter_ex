@@ -38,7 +38,8 @@ class TheaEx1 extends StatelessWidget {
               maxLines: 3,
               overflow: TextOverflow.ellipsis,
             ),
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            contentPadding:
+                const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             subtitle: Container(
               margin: const EdgeInsets.only(top: 4.0),
               child: Text(

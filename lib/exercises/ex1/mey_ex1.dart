@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
+/// Score 6/10.
+/// -4 of warning, check slide for more;
 class MeyEx1 extends StatelessWidget {
-  int _curretIndex = 0;
+  // int _curretIndex = 0;
+  final int _curretIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -95,11 +99,11 @@ class MeyEx1 extends StatelessWidget {
           selectedFontSize: 10,
           items: [
             BottomNavigationBarItem(
-              // ignore: deprecated_member_use
-              title: Text(
-                'home',
-                style: TextStyle(color: Colors.blue),
-              ),
+              // title: Text(
+              //   'home',
+              //   style: TextStyle(color: Colors.blue),
+              // ),
+              label: 'home',
               backgroundColor: Colors.blue,
               icon: Icon(
                 Icons.home,
@@ -107,22 +111,22 @@ class MeyEx1 extends StatelessWidget {
               ),
             ),
             BottomNavigationBarItem(
-              // ignore: deprecated_member_use
-              title: Text(
-                'person',
-                style: TextStyle(color: Colors.blue),
-              ),
+              // title: Text(
+              //   'person',
+              //   style: TextStyle(color: Colors.blue),
+              // ),
+              label: 'person',
               icon: Icon(
                 Icons.person,
                 color: Colors.blue,
               ),
             ),
             BottomNavigationBarItem(
-              // ignore: deprecated_member_use
-              title: Text(
-                'move',
-                style: TextStyle(color: Colors.blue),
-              ),
+              // title: Text(
+              //   'move',
+              //   style: TextStyle(color: Colors.blue),
+              // ),
+              label: 'move',
               icon: Icon(
                 Icons.more_horiz_outlined,
                 color: Colors.blue,

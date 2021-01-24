@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+/// Score: 6/10.
+/// -4 of warning, check slide for more;
 class SinatEx1 extends StatefulWidget {
   SinatEx1({Key key, this.title = "Sinat"}) : super(key: key);
 
@@ -133,22 +135,26 @@ class _MyHomePageState extends State<SinatEx1> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text("Home"),
+            // title: Text("Home"),
+            label: "Home",
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            title: Text('Search'),
+            // title: Text('Search'),
+            label: "Search",
             backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.history),
-            title: Text('History'),
+            // title: Text('History'),
+            label: "History",
             backgroundColor: Colors.grey,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            title: Text('Person'),
+            // title: Text('Person'),
+            label: "Person",
             backgroundColor: Colors.amber,
           ),
         ],
