@@ -1,16 +1,16 @@
-# flutter_app
+# Erobot Devs
+We are Erobot App Devs, currently we's helping each other to learn Flutter.
 
-A new Flutter project.
+This repository is contain all code of projects that we practice and score of each member.
 
-## Getting Started
+Weekly update slide: https://docs.google.com/presentation/d/13Er7ZxUhQ8_AjUfpGLQu4lGzGMvVS9eFTR73DDde8n8
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# Project
+- We contain all code of our member in `lib/exercises` directory.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- We declare route to each exercise in `lib/constants/constant.dart`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- In each exercise directory, we create `wrapper_ex_number.dart` to wrapper all code into one using `PageView()`
+
+### 
