@@ -1,26 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class SinatEx2 extends StatefulWidget {
+  SinatEx2({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -28,15 +9,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class _MyHomePageState extends State<SinatEx2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,23 +36,31 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(
-          icon: Icon(null),
-          // ignore: deprecated_member_use
-          title: Text("Styles",style: TextStyle(fontSize: 20,color: Colors.grey),)
-        ),
-         BottomNavigationBarItem(
-          icon: Icon(null),
-          // ignore: deprecated_member_use
-          title: Text("Tools",style: TextStyle(fontSize: 30,color: Colors.blue),)
-        ),
-         BottomNavigationBarItem(
-          icon: Icon(null),
-          // ignore: deprecated_member_use
-          title: Text("Exports",style: TextStyle(fontSize: 20)),
-        )
-      ],),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+              icon: SizedBox(),
+
+              // ignore: deprecated_member_use
+              title: Text(
+                "Styles",
+                style: TextStyle(fontSize: 20, color: Colors.grey),
+              )),
+          BottomNavigationBarItem(
+              icon: SizedBox(),
+
+              // ignore: deprecated_member_use
+              title: Text(
+                "Tools",
+                style: TextStyle(fontSize: 30, color: Colors.blue),
+              )),
+          BottomNavigationBarItem(
+            icon: SizedBox(),
+            // ignore: deprecated_member_use
+            title: Text("Exports", style: TextStyle(fontSize: 20)),
+          )
+        ],
+      ),
       backgroundColor: Colors.white,
       body: Container(
         child: Center(
@@ -97,7 +78,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ),
       ),
-
     );
   }
 
@@ -108,7 +88,6 @@ class _MyHomePageState extends State<MyHomePage> {
         context: context,
         builder: (BuildContext c) {
           return Wrap(
-            
             children: <Widget>[
               //COLUMN 1
               Padding(
@@ -551,8 +530,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Column(
                             children: <Widget>[
                               IconButton(
-                                  icon: Icon(Icons.tune),
-                                  onPressed: () {}),
+                                  icon: Icon(Icons.tune), onPressed: () {}),
                               Container(
                                 child: Column(
                                   children: [
@@ -627,8 +605,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           child: Column(
                             children: <Widget>[
                               IconButton(
-                                  icon: Icon(Icons.face),
-                                  onPressed: () {}),
+                                  icon: Icon(Icons.face), onPressed: () {}),
                               Container(
                                 child: Column(
                                   children: [
@@ -690,7 +667,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           );
-       
         });
   }
 }

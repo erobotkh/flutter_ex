@@ -1,31 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'OPEN'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class MeyEx2 extends StatefulWidget {
+  MeyEx2({Key key, this.title}) : super(key: key);
   final String title;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MeyEx2> {
   int _currentIndex = 0;
 
   get mainAxisAlignment => null;
@@ -79,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: IconButton(
-              icon: Icon(null), 
+              icon: Icon(null),
               onPressed: () => _onBottomPressed(),
             ),
             // ignore: deprecated_member_use
@@ -93,9 +76,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: IconButton(
-              icon: Icon(null), 
+              icon: Icon(null),
               onPressed: () => _onBottomPressed(),
-              ),
+            ),
             // ignore: deprecated_member_use
             title: Text(
               'Export',
